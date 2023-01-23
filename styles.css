@@ -1,0 +1,155 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Comfortaa';
+}
+
+@font-face {
+    font-family: "Comfortaa";
+    src: url("./Comfortaa-VariableFont_wght.ttf");
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+}
+
+/* left side */
+
+.container,
+.logo {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.logo{
+    height: auto;
+    background-color: rgba(53, 53, 53, 0.7);
+    position: relative;
+    top: 25vh;
+    gap: 1vw;
+    padding: 15px 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.bird{
+    height: 10vh;
+}
+
+h1{
+    color: white;
+}
+
+.display{
+    background-image: url(sunrise.jpg);
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    width: 40vw;
+}
+
+/* right side */
+
+.form-area{
+    width: 60vw;
+    background-color: black;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+.description{
+
+    height: 40vh;
+    background-color: black;
+}
+
+.form-header{
+    color:rgba(220, 220, 220);
+    padding: 10px;
+    font-size: 18px;
+}
+
+.form{
+    height: 30vh;
+    background-color: rgb(10, 10, 10);
+}
+
+.submit-area{
+    display: flex;
+    height: 30vh;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+}
+
+.submit-button{
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #fb636e;
+    border: none;
+    color: rgb(220, 220, 220);
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    margin-bottom: 10px;
+    width: 300px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.submit-button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.submit-button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.submit-button:hover span {
+    padding-right: 25px;
+}
+
+.submit-button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.has-account {
+    color: rgb(220, 220, 220);
+    margin-top: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+    .container{
+        flex-flow: column;
+        height: auto;
+        text-align: center;
+    }
+    .display{
+        width: 100vw;
+        height: 15vh;
+        display: flex;
+        background-size: 100vw;
+    }
+    .logo{
+        width: 100vw;
+        position: static;
+        gap: 10px;
+    }
+    .form-area{
+        width: auto;
+        height: auto;
+    }
+}
