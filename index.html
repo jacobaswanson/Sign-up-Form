@@ -17,13 +17,51 @@
         </div>
         <div class="form-area">
             <div class="description">
-                <p>While this may not be a real online service yet, It will be before you know it.
-                    Phoenix is a service geared towards arming the general populus with clarity some of the most dishonest people in the country.
+                <p class="desc-p">While this may not be a real online service yet, It will be before you know it.
+                    Phoenix is a service geared towards arming the general populus with clarity on some of the most dishonest people in the country.
                 </p>
             </div>
             <form action="">
             <div class="form">
                 <p class="form-header">Make an impact.</p>
+                <div class="input-area">
+                    <div class="input-row">
+                        <div class="input-col">
+                            <label for="firstname">First Name 
+                                <input type="text" id="firstname" name="firstname" maxlength="20" required>
+                            </label>
+                        </div>
+                        <div class="input-col">
+                            <label for="lastname">Last Name 
+                                <input type="text" id="lastname" name="lastname" maxlength="20" required>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="input-row">
+                        <div class="input-col">
+                            <label for="email">E-Mail
+                                <input type="email" id="email" name="email" title="Please enter a valid e-mail address" required>
+                            </label>
+                        </div>
+                        <div class="input-col">
+                            <label for="phonenumber">Phone Number
+                                <input type="text" id="phonenumber" name="phonenumber" pattern="(\d{10}?)" title="Please enter a 10-digit phone number" required>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="input-row">
+                        <div class="input-col">
+                            <label for="password">Password
+                                <input type="password" id="password" name="password" minlength="8" title="Please enter a password that is atleast 8 characters long." required>
+                            </label>
+                        </div>
+                        <div class="input-col">
+                            <label for="confirmpassword">Confirm Password
+                                <input type="password" id="confirmpassword" name="confirmpassword" minlength="8" title="Please enter a password that is atleast 8 characters long." required>
+                            </label>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="submit-area">
                 <button class="submit-button" style="vertical-align:middle"><span>Create Account</span></button>

@@ -61,9 +61,13 @@ h1{
 }
 
 .description{
-
-    height: 40vh;
+    display: flex;
+    align-items:flex-end;
+    height: 20vh;
     background-color: black;
+    color: rgb(220, 220, 220);
+    padding: 10px 10px 20px 10px;
+    font-size: 22px;
 }
 
 .form-header{
@@ -73,8 +77,53 @@ h1{
 }
 
 .form{
-    height: 30vh;
     background-color: rgb(10, 10, 10);
+    color: rgb(220,220,220);
+}
+
+.input-area{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 60%;
+}
+
+.input-col{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+label{
+    position: relative;
+    width: 15rem;
+    margin-bottom: 15px;
+}
+
+input{
+    border-radius: 5px;
+    background-color: black;
+    border: 1px solid darkgray;
+    color: darkgray;
+    width: 80%;
+    height: 3vh;
+}
+
+input:focus{
+    outline: none;
+    border: 2px solid #fb636e;
 }
 
 .submit-area{
@@ -137,6 +186,9 @@ h1{
         height: auto;
         text-align: center;
     }
+    .description{
+        height: 20vh;
+    }
     .display{
         width: 100vw;
         height: 15vh;
@@ -148,8 +200,17 @@ h1{
         position: static;
         gap: 10px;
     }
+    .form{
+        justify-content: center; 
+    }
+
     .form-area{
         width: auto;
         height: auto;
+    }
+    .input-area{
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
     }
 }
